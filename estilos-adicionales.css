@@ -1,0 +1,39 @@
+/* Botón del formulario de comentarios */
+.single-post .comment-form .submit {
+    background: #17434a;
+    color: #fff;
+    border: 1px solid #17434a;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.single-post .comment-form .submit:hover {
+    background: #245c65;
+    border-color: #245c65;
+}
+
+.single-post .comment-form .submit:focus-visible {
+    outline: 2px solid #17434a;
+    outline-offset: 3px;
+}
+
+/* Contacto sobre el fondo oscuro de Tratamientos */
+.clinica-boton-contacto-claro .wp-block-button__link {
+    transition: background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.clinica-boton-contacto-claro .wp-block-button__link:hover,
+.clinica-boton-contacto-claro .wp-block-button__link:focus-visible {
+    background-color: #eef6f7 !important;
+    color: #17434a !important;
+    border-color: #eef6f7 !important;
+}
+
+.clinica-boton-contacto-claro .wp-block-button__link:focus-visible {
+    outline: 2px solid #eef6f7;
+    outline-offset: 4px;
+}

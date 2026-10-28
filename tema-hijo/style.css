@@ -1,0 +1,184 @@
+/*
+Theme Name: Clinica Dental Child
+Description: Tema hijo de Twenty Twenty-Five para la clinica.
+Author: Ricardo Fuentes
+Template: twentytwentyfive
+Version: 1.0.0
+Text Domain: clinica-child
+*/
+
+.clinica-horario {
+    color: #17434a;
+    background-color: #eef6f7;
+    border-left: 4px solid #176b75;
+    padding: 16px;
+}
+
+.clinica-correo a {
+    color: #176b75;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.clinica-correo a:hover {
+    color: #103f46;
+    text-decoration-thickness: 2px !important;
+}
+
+.clinica-correo a:focus-visible {
+    outline: 2px solid #176b75;
+    outline-offset: 4px;
+}
+
+.clinica-aviso {
+    color: #17434a;
+    background-color: #f3f6f6;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.clinica-consejo {
+    background-color: #eef6f7;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.clinica-pregunta {
+    border: 1px solid #176b75;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.clinica-pregunta summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clinica-pregunta summary:focus-visible {
+    outline: 2px solid #176b75;
+    outline-offset: 4px;
+}
+
+.clinica-pregunta summary:focus:not(:focus-visible) {
+    outline: none;
+}
+
+body.clinica-contacto .clinica-horario {
+    border-radius: 12px;
+}
+
+/* Presentación de Contacto al imprimir. */
+@media print {
+
+    body.clinica-contacto .clinica-imprimir,
+    body.clinica-contacto #wpadminbar {
+        display: none !important;
+    }
+
+    body.clinica-contacto .clinica-horario,
+    body.clinica-contacto .clinica-consejo,
+    body.clinica-contacto .clinica-aviso {
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+}
+
+/* Formulario de contacto */
+.clinica-formulario input[type="text"],
+.clinica-formulario input[type="email"],
+.clinica-formulario textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #657b80;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #17434a;
+    font: inherit;
+}
+
+.clinica-formulario textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.clinica-formulario input[type="submit"] {
+    padding: 12px 24px;
+    border: 2px solid #176b75;
+    border-radius: 8px;
+    background-color: #176b75;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.clinica-formulario input[type="submit"]:hover {
+    background-color: #12545c;
+    border-color: #12545c;
+}
+
+.clinica-formulario input:focus-visible,
+.clinica-formulario textarea:focus-visible {
+    outline: 3px solid #176b75;
+    outline-offset: 3px;
+}
+
+.clinica-boton-contacto .wp-block-button__link {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.clinica-boton-contacto .wp-block-button__link:hover,
+.clinica-boton-contacto .wp-block-button__link:focus-visible {
+    background-color: #FFFFFF !important;
+    color: #17434A !important;
+    border-color: #FFFFFF !important;
+}
+
+.clinica-boton-contacto .wp-block-button__link:focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 4px;
+}
+
+
+/* Inicio: transición suave de los tres botones */
+.clinica-boton-contacto .wp-block-button__link,
+.clinica-boton-tratamientos .wp-block-button__link,
+.clinica-boton-blog .wp-block-button__link {
+    transition: background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Contáctanos: verde oscuro */
+.clinica-boton-contacto .wp-block-button__link:hover {
+    background-color: #17434a !important;
+    color: #ffffff !important;
+    border-color: #17434a !important;
+}
+
+/* Ver tratamientos: fondo verde suave */
+.clinica-boton-tratamientos .wp-block-button__link:hover {
+    background-color: #eef6f7 !important;
+    color: #17434a !important;
+    border-color: #17434a !important;
+}
+
+/* Visitar el blog: otro tono de verde */
+.clinica-boton-blog .wp-block-button__link:hover {
+    background-color: #205c63 !important;
+    color: #ffffff !important;
+    border-color: #205c63 !important;
+}
+
+/* Foco visible al navegar con el teclado */
+.clinica-boton-contacto .wp-block-button__link:focus-visible,
+.clinica-boton-tratamientos .wp-block-button__link:focus-visible,
+.clinica-boton-blog .wp-block-button__link:focus-visible {
+    outline: 2px solid #17434a;
+    outline-offset: 3px;
+}
+
